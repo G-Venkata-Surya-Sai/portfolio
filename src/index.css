@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "JetBrains Mono", monospace;
+  background: #000;
+  color: #00ff9c;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 4rem;
+  position: relative;
+  z-index: 1;
+}
+
+.prompt {
+  color: #00ff9c;
+  opacity: 0.7;
+  margin-bottom: 0.5rem;
+}
+
+.name {
+  font-size: 3rem;
+  margin: 0.5rem 0;
+}
+
+.summary {
+  max-width: 600px;
+  line-height: 1.6;
+  color: #b7ffe3;
+}
+
+.resume-buttons {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.6rem 1.4rem;
+  background: #00ff9c;
+  color: #000;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.btn.outline {
+  background: transparent;
+  color: #00ff9c;
+  border: 1px solid #00ff9c;
+}
+
+.socials {
+  margin-top: 4rem;
+}
+
+.links a {
+  display: inline-block;
+  margin-right: 1.5rem;
+  color: #00ff9c;
+  text-decoration: none;
+  border-bottom: 1px dashed transparent;
+}
+
+.links a:hover {
+  border-bottom: 1px dashed #00ff9c;
+}
+
+.contact-row a {
+  color: #00ff9c;
+  text-decoration: none;
+}
+
+.footer .copyright {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  opacity: 0.6;
+}
+
+
+.matrix-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background: black;
+}
+
+.layout {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5rem; /* space for fixed footer */
+}
+
+.content-box {
+  margin-top: 10vh;
+  max-width: 85vw;
+  width: 100%;
+  padding: 3rem;
+  background: rgba(0, 0, 0, 0.85);
+  border: 1px solid #003d2a;
+  border-radius: 12px;
+  box-shadow: 0 0 40px rgba(0, 255, 156, 0.08);
+  backdrop-filter: blur(4px);
+}
